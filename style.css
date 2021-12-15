@@ -1,0 +1,178 @@
+/* the navigation section styles */
+.header * {
+    display:inline;
+}
+
+.header {
+    background-color:white;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    box-shadow: 0 0 25px 0 black;
+    align-items: center;
+    padding: 5px;
+}
+
+.logo {
+    width:23%;
+    padding:1%;
+}
+
+.links {
+    display:inline;
+    list-style-type: none;
+    font-family: sans-serif;
+    align-content: right;
+    word-spacing: 30px;
+}
+
+
+.logo {
+    text-align: center;
+}
+
+.header .linkedin {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.header .email {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+/* the main body section styles */
+/*<!--  My projects section coded using CSS flex */
+
+
+.wholepage {
+    display:flex;
+    background-image: url("Images/ray-mallick-5J1bHRX1fNw-unsplash\ \(1\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:10px;
+    padding:10px;
+    height:max-content;
+    border-radius: 10px;
+}
+.projects {
+
+    background-color: white;
+    background-size: cover;
+}
+
+.flexContainer {
+    display:flex;
+    flex-direction: row;
+    height:max-content;
+    margin:20px;
+    padding:10px;
+}
+
+.senior {
+    width: 33%;
+    margin: 5px;
+    padding:5px;
+    background-color: white;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.gooday {
+    width: 33%;
+    margin: 5px;
+    padding:5px;
+    background-color: white;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.homeland {
+    width: 33%;
+    margin: 5px;
+    padding:5px;
+    background-color: white;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.p {
+    text-align: left;
+    font-family: sans-serif;
+}
+
+h4 {
+    text-align: center;
+}
+
+.seniorpic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding:10px;
+}
+
+.goodaypic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding:10px;
+}
+
+.dhspic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding:10px;
+}
+button {
+    background-image: linear-gradient(#0dccea, #0d70ea);
+    border: 0;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: .9em;
+    margin: 5px;
+    padding: 10px 15px;
+    text-align: center;
+}
+/* the footer section styles */
+.footer {
+    position: fixed;
+}
+.footerBar {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    position:fixed;
+}
+
+footer a {
+    float: right;
+    width: 120px;
+}
+
+@media only screen and (max-width: 600px) {
+    .flexContainer { 
+        flex-direction: column;
+    }
+
+    .senior .homeland .gooday {
+        width:100%;
+    }
+  }
