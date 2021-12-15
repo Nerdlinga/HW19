@@ -5,6 +5,7 @@
 
 .header {
     background-color:white;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -46,106 +47,100 @@
     margin-left: 10px;
 }
 /* the main body section styles */
-/*<!--  My projects section coded using CSS flex */
+body {
+    display: inline-block;
+    margin-top: 60px;
+}
 
-
-.wholepage {
-    display:flex;
-    background-image: url("Images/ray-mallick-5J1bHRX1fNw-unsplash\ \(1\).jpg");
+section {
+    display:inline-block;
+    background-image: url("Images/joe-woods-4Zaq5xY5M_c-unsplash\ 1.png");
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size: cover;
-    margin:10px;
-    padding:10px;
-    height:max-content;
-    border-radius: 10px;
-}
-.projects {
-
-    background-color: white;
-    background-size: cover;
+    padding: 10px;
 }
 
-.flexContainer {
+.container {
     display:flex;
-    flex-direction: row;
-    height:max-content;
-    margin:20px;
-    padding:10px;
+    align-items: center;
+    justify-content: center;
 }
 
-.senior {
-    width: 33%;
-    margin: 5px;
-    padding:5px;
+.content {
+    float:left;
     background-color: white;
-    text-align: center;
-    border-radius: 15px;
 }
 
-.gooday {
-    width: 33%;
-    margin: 5px;
-    padding:5px;
-    background-color: white;
-    text-align: center;
-    border-radius: 15px;
+p {
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
 }
 
-.homeland {
-    width: 33%;
-    margin: 5px;
-    padding:5px;
-    background-color: white;
-    text-align: center;
-    border-radius: 15px;
+h1 {
+    font-family: merriweather, serif;
+    font-size: 30px;
+    float:left;
+    margin-right: 20px;
+    margin-left: 10px;
+    height: 100px;
+    width: 190px;
 }
 
-.p {
+.content p {
+    text-align:left;
+}
+.skills { 
+    background-color: hsla(241, 84%, 64%, 0.3);
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.skills img {
+    float:left;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+}
+
+.skills h2 {
+    float:left;
+    margin-right: 10px;
+    margin-left: 10px;
+    height:140px;
+    width: 100px;
+}
+
+.skills p {
     text-align: left;
-    font-family: sans-serif;
 }
 
-h4 {
-    text-align: center;
+.interests {
+    background-color: hsla(305, 46%, 48%, 0.3);
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom:10px;
+    width: 100%;
 }
 
-.seniorpic {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    padding:10px;
+.interests img {
+    float:left;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.interests h2 {
+    float:left;
+    margin-right: 10px;
+    margin-left: 10px;
+    height:120px;
+    width: 100px;
 }
 
-.goodaypic {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    padding:10px;
+.interests p {
+   text-align: left;
 }
 
-.dhspic{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    padding:10px;
-}
-button {
-    background-image: linear-gradient(#0dccea, #0d70ea);
-    border: 0;
-    border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    font-family: sans-serif;
-    font-size: .9em;
-    margin: 5px;
-    padding: 10px 15px;
-    text-align: center;
-}
 /* the footer section styles */
 .footer {
     position: fixed;
@@ -159,20 +154,9 @@ button {
     color: white;
     display: inline-block;
     padding: 10px;
-    position:fixed;
 }
 
 footer a {
     float: right;
     width: 120px;
 }
-
-@media only screen and (max-width: 600px) {
-    .flexContainer { 
-        flex-direction: column;
-    }
-
-    .senior .homeland .gooday {
-        width:100%;
-    }
-  }
