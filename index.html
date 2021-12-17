@@ -2,25 +2,19 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
-        <title></title>
+        <script type="text/javascript" src="index.js"></script>
+        <title>Lori Dyer</title>
     </head>
 
 <!-- The lightbox -->
-<div id="myModal" class="modal">
-
-  <!-- Lightbox content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h2>Welcome</h2>
-    <p>Nice to meet you and thanks for popping by! On this site, 
-        you'll learn about me, my skills and see some work examples.
-    </p>
-    <br>
-    <p> Be sure to contact me to chat about upcoming projects and 
-        any collaboration opportunities.
-    </p>
-    <button class="button">Okay</button>
-  </div>
+<div id="boxes">
+    <div id="dialog" class="window">
+    Your Content Goes Here
+    <div id="popupfoot"> <a href="#" class="close agree">I agree</a> | <a class="agree"style="color:red;" href="#">I do not agree</a> </div>
+    </div>
+    <div id="mask"></div>
+    </div>
+    
 
 </div>
        <header class="header">
@@ -74,5 +68,6 @@
             </div>
        </footer>
     </body>
-    <script src="js/index.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+
 </html>
