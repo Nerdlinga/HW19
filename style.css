@@ -164,8 +164,13 @@ footer a {
 /* The Modal  */
 /* The Modal (background) */
 .modal {
-    position: relative;
-    display: inline-block;
+ margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
     cursor: pointer;
   }
   
