@@ -2,15 +2,24 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
-        <script type="text/javascript" src="index.js"></script>
+        <script type="text/javascript" src="index.js" rel=></script>
         <title>Lori Dyer</title>
         <!-- Modal -->
         <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">  
+    <script
+ src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".popup").click(function(){
+    $(this).hide();
+  });
+});
+        </script>
     </head>
 <body>
     <div class="popup">
-        <button id="close">&times;</button>
+        <button id="button1">&times;</button>
         <h2>Welcome!</h2>
         <p>
             Nice to meet you and thanks for popping by! On this site, you’ll learn about me, my skills and see some work examples.
@@ -18,11 +27,11 @@
             <br>
             Be sure to contact me to chat about upcoming projects and any collaboration opportunities.
         </p>
-        <a class="a-pop" href="#">Okay</a>
+        <a class="okay" href="#">Okay</a>
     </div>
-    <!--Script-->
-    <script src="script.js">
-            </script> 
+
+    
+
 
 </div>
        <header class="header">
@@ -78,6 +87,6 @@
             </div>
        </footer>
     </body>
-   
+    <script src="index.js"></script>
 
 </html>

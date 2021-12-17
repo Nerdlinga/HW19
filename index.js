@@ -6,6 +6,5 @@ window.addEventListener("load", function(){
         1000
     )
 });
-document.querySelector("#close").addEventListener("click", function(){
-    document.querySelector(".popup").style.display = "none";
-});
+
+
