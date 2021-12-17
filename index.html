@@ -3,9 +3,30 @@
     <head>
         <link rel="stylesheet" href="style.css" href="bootstrap.min.css">
         <script type="text/javascript" src="index.js"></script>
-
         <title>Lori Dyer</title>
-        
+        <!-- Modal -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0-rc.2/jquery.mobile-1.2.0-rc.2.min.css" />
+        <script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.2.0-rc.2/jquery.mobile-1.2.0-rc.2.min.js"></script>
+    </head>
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1>Welcome!</h1>
+        </div>
+        <div data-role="content">
+            Page Content
+            <div data-role="popup" id="myPopup" data-history="false">
+              <p>Nice to meet you and thanks for popping by! On this site, you’ll learn about me, my skills and see some work examples.
+
+                Be sure to contact me to chat about upcoming projects and any collaboration opportunities..<p>
+            </div>
+            <script type="text/javascript" language="JavaScript">
+                $(":jqmData(role='page'):last").on("pageshow", function(event) {
+                  $("#myPopup", $(this)).popup("open");
+                });
+            </script>
+
     </head>
 </div>
        <header class="header">
@@ -24,10 +45,6 @@
            </div>
        </header> 
        <body>
-           
- <!-- Modal -->
- 
-
     </p>
     
        <section>
