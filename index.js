@@ -16,7 +16,7 @@ span.onclick = function() {
 var span = document.getElementsByClassName("close")[0];
 
 // when user hits button, close the modal
-button.onclick = function(event) {
+myBtn.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
