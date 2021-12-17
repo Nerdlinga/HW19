@@ -1,48 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css" href="bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
         <script type="text/javascript" src="index.js"></script>
         <title>Lori Dyer</title>
         <!-- Modal -->
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0-rc.2/jquery.mobile-1.2.0-rc.2.min.css" />
-        <script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
-        <script src="http://code.jquery.com/mobile/1.2.0-rc.2/jquery.mobile-1.2.0-rc.2.min.js"></script>
+        <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">  
     </head>
 <body>
-    <div data-role="page">
-        <div data-role="header">
-            <h1>Welcome!</h1>
-        </div>
-        <div data-role="content">
-            
-            <div data-role="popup" id="myPopup" data-history="false">
-              <p>Nice to meet you and thanks for popping by! On this site, you’ll learn about me, my skills and see some work examples.
-
-                Be sure to contact me to chat about upcoming projects and any collaboration opportunities..<p>
-            </div>
-            <script type="text/javascript" language="JavaScript">
-                $(":jqmData(role='page'):last").on("pageshow", function(event) {
-                  $("#myPopup", $(this)).popup("open");
-                });
-            </script>
-            
-</div>
-       <header class="header">
-           <div class="inline-block" class="logo">
-               <img src="Images/LD.png" alt="Logo">
-               <nav class="inline-block1">
-                   <ul class="links">
-                       <li>Home</li>
-                       <li>Contact</li>
-                       <li>Projects</li>
-                       <li>Resume</li>
-                   </ul>
-                       <img class="email" src="Images/bi_envelope-fill.png">
-                       <img class="linkedin" src="Images/bi_linkedin.png">
-               </nav>
-           </div>
-       </header> 
+    <div class="popup">
+        <button id="close">&times;</button>
+        <h2>This Is The Title</h2>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita distinctio fugiat alias iure qui, commodi minima magni ullam aliquam dignissimos?
+        </p>
+        <a class="a-pop" href="#">Let's Go</a>
+    </div>
+    <!--Script-->
+    <script src="script.js"></script>
        <body>
     </p>
     
