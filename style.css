@@ -163,7 +163,7 @@ footer a {
 
 /* The Modal  */
 /* The Modal (background) */
-.modal {
+.modal .modal-content{
  margin: 70px auto;
   padding: 20px;
   background: #fff;
